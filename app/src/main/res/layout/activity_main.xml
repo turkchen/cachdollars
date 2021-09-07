@@ -8,34 +8,42 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="58dp"
+        android:layout_width="295dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="57dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="293dp"
+        android:layout_marginEnd="57dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="CATCH DOLLARS"
         android:textColor="#C18224"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="111dp"
-        android:layout_height="79dp"
-        android:layout_marginBottom="169dp"
+        android:layout_width="109dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#CB7F00"
+        android:onClick="play"
         android:text="play"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/RecordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/RecordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Record : "
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        tools:layout_editor_absoluteY="562dp" />
 
 </android.support.constraint.ConstraintLayout>
