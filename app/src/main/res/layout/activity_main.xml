@@ -7,20 +7,35 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/slksn"
-        android:layout_width="294dp"
-        android:layout_height="119dp"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="293dp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="CATCH DOLLARS"
         android:textColor="#C18224"
         android:textSize="50sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="111dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="169dp"
+        android:backgroundTint="#CB7F00"
+        android:text="play"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
 </android.support.constraint.ConstraintLayout>
